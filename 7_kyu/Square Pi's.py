@@ -1,0 +1,5 @@
+from math import ceil
+
+def square_pi(digits):
+  myPy = '31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679'
+  return ceil((sum([int(i) ** 2 for i in myPy[:digits]]))**(1/2))
